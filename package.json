@@ -1,7 +1,7 @@
 {
   "name": "code-snake",
   "version": "1.0.0",
-  "description": "Snake, played inside the program's own source code. The game lays its own minified source out as justified text and carves the snake from whitespace: the code is the board.",
+  "description": "Snake, played inside its own source code. This program does not draw a board, it becomes one; the snake is the space its words leave behind. Code as medium.",
   "keywords": [
     "snake",
     "game",
