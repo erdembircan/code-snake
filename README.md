@@ -42,37 +42,3 @@ Requires an interactive terminal and Node.js. No dependencies.
 | `--green` | paint the snake body green instead of pure whitespace |
 | `--smoke [cols rows]` | render a single frame headless and exit (testing) |
 
-## How the layout works
-
-Every frame is a full reflow of the entire source through the field — one
-continuous token stream, no static lines. Three nested distributions, each using
-the same Bresenham-style error accumulator (`floor(E·i/n) − floor(E·(i−1)/n)`):
-
-1. **Across rows** — each row receives a character quota proportional to its free
-   width (total width minus whatever the snake and food carve out of that row).
-   A snake anywhere shifts every row's quota slightly, so a disturbance is
-   absorbed by the whole page instead of cratering one line.
-2. **Across segments** — within a row, words are distributed over the free
-   segments between carved spans, proportional to segment widths.
-3. **Within segments** — classic full justification: leftover slack is spread
-   over the word gaps, never differing by more than one space.
-
-Words that don't fit a boundary are hard-broken and carried into the next
-segment or row, so text stays dense even beside a snake hugging the field edge.
-The result is a structural invariant: every row is exactly the same width, every
-frame — the field is always a perfect rectangle, flush on all four edges.
-
-The field's size comes from the content, not the screen: width ≈
-`sqrt(chars × 5)`, height from a wrap simulation, plus a sliver of slack that the
-snake "borrows" as it grows. On a large monitor the field keeps its natural size,
-centered. The source renders exactly once — no tiling, no repetition.
-
-A built-in minifier (string-literal-aware, so the code's own text survives
-verbatim) strips the spaces that justification doesn't need, then re-chunks long
-runs at punctuation so justification keeps its seams.
-
-## Honest limits
-
-Grow long enough and the carved area exceeds the layout slack: the final tokens
-fall off the bottom row. The snake eats the code. This is considered thematically
-correct behavior.
