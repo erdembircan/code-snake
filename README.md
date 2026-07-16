@@ -2,7 +2,9 @@
 
 Snake, played inside the program's own source code. **The code is the board.**
 
-![code-snake gameplay](assets/demo.gif)
+<p align="center">
+  <img src="assets/demo.gif" alt="code-snake gameplay">
+</p>
 
 No sprites, no box-drawing characters, no pixels. When code-snake starts, it reads
 its own source file, minifies it, and lays it out as fully justified text filling
