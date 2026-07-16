@@ -1,4 +1,17 @@
 #!/usr/bin/env node
+
+/*
+  code-snake
+  by Erdem Bircan, 2026. Apache-2.0.
+
+  Code as medium: this program does not draw a board, it becomes one.
+  The words you are reading right now are laid out as justified text,
+  and the snake is nothing but whitespace pushing them apart. Source
+  code spends its life hidden behind the screen; here it steps out in
+  front and is asked to hold still while you play across it. If art is
+  material made self-aware, this file qualifies on a technicality.
+*/
+
 'use strict';
 
 const fs = require('fs');
