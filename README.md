@@ -2,6 +2,8 @@
 
 Snake, played inside the program's own source code. **The code is the board.**
 
+![code-snake gameplay](assets/demo.gif)
+
 No sprites, no box-drawing characters, no pixels. When code-snake starts, it reads
 its own source file, minifies it, and lays it out as fully justified text filling
 an exact rectangle. The snake exists only as *absence*: words are pushed together
