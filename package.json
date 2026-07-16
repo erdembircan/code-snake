@@ -1,0 +1,46 @@
+{
+  "name": "code-snake",
+  "version": "1.0.0",
+  "description": "Snake, played inside the program's own source code. The game lays its own minified source out as justified text and carves the snake from whitespace: the code is the board.",
+  "keywords": [
+    "snake",
+    "game",
+    "terminal",
+    "cli",
+    "tui",
+    "ansi",
+    "text",
+    "justification",
+    "self-referential",
+    "code-as-medium",
+    "whitespace",
+    "art"
+  ],
+  "bin": {
+    "code-snake": "snake.js"
+  },
+  "main": "snake.js",
+  "files": [
+    "snake.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdembircan/code-snake.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erdembircan/code-snake/issues"
+  },
+  "homepage": "https://github.com/erdembircan/code-snake#readme",
+  "author": "Erdem Bircan",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=14"
+  },
+  "license-wizard": {
+    "licenseId": "Apache-2.0",
+    "tokens": {
+      "[yyyy]": "2026",
+      "[name of copyright owner]": "Erdem Bircan"
+    }
+  }
+}
