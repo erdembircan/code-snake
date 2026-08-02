@@ -43,8 +43,6 @@ Or, from a clone of this repo:
 node snake.js
 ```
 
-Every route plays the same board, because every route reads the same file.
-
 Requires an interactive terminal and Node.js 14 or newer. No dependencies.
 
 | Keys | |
@@ -60,10 +58,4 @@ Requires an interactive terminal and Node.js 14 or newer. No dependencies.
 |---|---|
 | `--green` | paint the snake body green instead of pure whitespace |
 | `--smoke [cols rows]` | render a single frame headless and exit (testing) |
-
-Flags go after the command, whichever way you launched it:
-
-```sh
-npx code-snake --green
-```
 
