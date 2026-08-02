@@ -59,3 +59,7 @@ Requires an interactive terminal and Node.js 14 or newer. No dependencies.
 | `--green` | paint the snake body green instead of pure whitespace |
 | `--smoke [cols rows]` | render a single frame headless and exit (testing) |
 
+## Changelog
+
+Release history lives in [CHANGELOG.md](CHANGELOG.md).
+
