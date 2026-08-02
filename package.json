@@ -1,6 +1,6 @@
 {
   "name": "code-snake",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Snake, played inside its own source code. This program does not draw a board, it becomes one; the snake is the space its words leave behind. Code as medium.",
   "keywords": [
     "snake",
