@@ -25,10 +25,25 @@ reflowing its own text around the game state as you play.
 ## Run
 
 ```sh
+npx code-snake
+```
+
+That is the whole install. npx fetches the package, runs it, and leaves nothing behind.
+
+To keep it around:
+
+```sh
+npm install -g code-snake
+code-snake
+```
+
+Or, from a clone of this repo:
+
+```sh
 node snake.js
 ```
 
-Requires an interactive terminal and Node.js. No dependencies.
+Requires an interactive terminal and Node.js 14 or newer. No dependencies.
 
 | Keys | |
 |---|---|
