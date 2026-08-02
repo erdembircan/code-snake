@@ -25,10 +25,27 @@ reflowing its own text around the game state as you play.
 ## Run
 
 ```sh
+npx code-snake
+```
+
+That is the whole install. npx fetches the package, runs it, and leaves nothing behind.
+
+To keep it around:
+
+```sh
+npm install -g code-snake
+code-snake
+```
+
+Or, from a clone of this repo:
+
+```sh
 node snake.js
 ```
 
-Requires an interactive terminal and Node.js. No dependencies.
+Every route plays the same board, because every route reads the same file.
+
+Requires an interactive terminal and Node.js 14 or newer. No dependencies.
 
 | Keys | |
 |---|---|
@@ -43,4 +60,10 @@ Requires an interactive terminal and Node.js. No dependencies.
 |---|---|
 | `--green` | paint the snake body green instead of pure whitespace |
 | `--smoke [cols rows]` | render a single frame headless and exit (testing) |
+
+Flags go after the command, whichever way you launched it:
+
+```sh
+npx code-snake --green
+```
 
